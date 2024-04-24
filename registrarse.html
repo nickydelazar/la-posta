@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="main.html" class="active">INICIO</a>
+        <a href="deportes.html">Deportes</a>
+        <a href="economia.html">Economía</a>
+        <a href="politica.html">Política</a>
+        <a href="sociedad.html">Sociedad</a>
+        <a href="policiales.html">Policiales</a>
+        <a href="noticia.html">¡CREA TU NOTICIA!</a>
+        <a href="login.html">INICIAR SESIÓN</a>
+    </div>
+
+    <form action="registrarse.html">
+        <div class="container">
+          <h1>REGISTRATE</h1>
+          <p>Completá los siguientes datos para crear tu cuenta</p>
+          <hr>
+      
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Agregar email" name="email" id="email" required>
+      
+          <label for="psw"><b>Contraseña</b></label>
+          <input type="password" placeholder="Agregar contraseña" name="psw" id="psw" required>
+      
+          <label for="psw-repeat"><b>Repetir contraseña</b></label>
+          <input type="password" placeholder="Repetir contraseña" name="psw-repeat" id="psw-repeat" required>
+          <hr>
+
+          <button type="submit" class="registerbtn">Registrarse</button>
+        </div>
+
+        <div class="container2" style="background-color:#f1f1f1">
+          <button type="button" class="cancelbtn">Cancelar</button>
+          <span class="log">¿Ya tenés una cuenta? <a href="login.html">Inicia sesión</a></span>
+        </div>
+      </form>
+</body>
+</html>
