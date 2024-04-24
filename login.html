@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>La Posta</title>
+</head>
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="main.html" class="active">INICIO</a>
+        <a href="deportes.html">Deportes</a>
+        <a href="economia.html">Economía</a>
+        <a href="politica.html">Política</a>
+        <a href="sociedad.html">Sociedad</a>
+        <a href="policiales.html">Policiales</a>
+        <a href="tecno.html">Tecnología</a>
+        <a href="noticia.html">¡CREA TU NOTICIA!</a>
+        <a href="login.html">INICIAR SESIÓN</a>
+    </div>
+
+    <form action="login.html" method="post">
+      <div class="container">
+          <label for="uname"><b>Email</b></label>
+          <input type="text" placeholder="Agregar email" name="uname" required>
+  
+          <label for="psw"><b>Contraseña</b></label>
+          <input type="password" placeholder="Agregar contraseña" name="psw" required>
+  
+          <button type="submit">INICIAR SESIÓN</button>
+          <label>
+              <input type="checkbox" checked="checked" name="remember"> Recordarme
+          </label>
+      </div>
+  
+      <div class="container2" style="background-color:#f1f1f1">
+          <button type="button" class="cancelbtn">Cancelar</button>
+          <!-- Utiliza un evento onclick para redirigir al usuario a la página de registro -->
+          <button type="button" class="registrarsebtn" onclick="window.location.href='registrarse.html'">REGISTRARSE</button>
+          <span class="psw">Olvidaste la <a href="#">contraseña?</a></span>
+      </div>
+  </form>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Formulario</title>
+    <style>
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="file"] {
+            margin-top: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #0E46A3;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #E1F7F5;
+            color: black;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="main.html" class="active">INICIO</a>
+        <a href="deportes.html">Deportes</a>
+        <a href="economia.html">Economía</a>
+        <a href="politica.html">Política</a>
+        <a href="sociedad.html">Sociedad</a>
+        <a href="policiales.html">Policiales</a>
+        <a href="tecno.html">Tecnología</a>
+        <a href="noticia.html">¡CREA TU NOTICIA!</a>
+        <a href="login.html">INICIAR SESIÓN</a>
+    </div>
+
+    <h2>¡CREA TU NOTICIA!</h2>
+    <form action="noticia.html" method="post" enctype="multipart/form-data">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" required>
+
+        <label for="categoria">Categoría:</label>
+        <input type="text" id="categoria" name="categoria" required>
+
+        <label for="titulo">Título:</label>
+        <input type="text" id="titulo" name="titulo" required>
+
+        <label for="subtitulo">Subtítulo:</label>
+        <input type="text" id="subtitulo" name="subtitulo" required>
+
+        <label for="cuerpo">Cuerpo:</label>
+        <textarea id="cuerpo" name="cuerpo" rows="6" required></textarea>
+
+        <label for="imagen">Subir Imagen:</label>
+        <input type="file" id="imagen" name="imagen" accept="image/*" required>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>

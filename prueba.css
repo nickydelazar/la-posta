@@ -1,0 +1,80 @@
+/* Estilos generales */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container-main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Estilos para el encabezado */
+
+header {
+    background-color: #e01e5a;
+    padding: 20px 0;
+}
+
+header .logo img {
+    max-width: 200px;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Estilos para el contenido principal */
+
+main {
+    padding: 20px 0;
+}
+
+.noticias {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.noticias article {
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+.noticias article h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.noticias article p {
+    margin-bottom: 15px;
+}
+
+.noticias article img {
+    width: 100%;
+    height: auto;
+}
+
+/* Estilos para el pie de página */
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
