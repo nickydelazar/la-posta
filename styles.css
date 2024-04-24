@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    transition: all .2s;
+}
+
 body {
     margin: 0;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
@@ -15,9 +21,12 @@ h2 {
 .topnav {
     overflow: hidden;
     background-color: #0E46A3;
+    display: flex;
+    display: flex;
+    justify-content: space-around;
 }
 
-.topnav a {
+.topnav .category {
     float: left;
     display: block;
     color: #E1F7F5;
@@ -124,18 +133,27 @@ button:hover {
 
 /* Add padding to containers */
 .container {
-    padding: 30px 400px;
+    /* padding: 30px 400px; */
+    min-height: 80%;
+}
+
+.sessionCont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .container2 {
-    padding: 50px 500px;
-    padding-bottom: 50px;
-    padding-top: 25px;
+    padding: 5% 25%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 /* The "Forgot password" y ya tenes cuenta text */
 span.psw {
-    float: right;
+    text-align: center;
     padding-top: 5px;
 }
 
@@ -203,4 +221,114 @@ main {
 .sidebar {
     width: 250px;
     margin-left: 20px;
+}
+
+.registrarsebtn {
+    width: auto;
+}
+
+.registerCont {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+@media(max-width:590px) {
+    .registerCont {
+        flex-direction: column;
+    }
+    .container2 {
+        padding: 6% 0;
+    }
+}
+
+.formCont {
+    width: 55%;
+    height: 75%;
+}
+
+.formCont p {
+    color: gray;
+}
+
+.headerNewsCont {
+    display: flex;
+}
+
+.dropwdownHeader {
+    display: none;
+}
+
+.headerUserCont {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 30%;
+}
+
+.headerUserCont a {
+    color: white;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.215);
+    padding: 2%;
+    border-radius: 5px;
+}
+
+.dropdownCont {
+    position: absolute;
+    top: 5%;
+    display: none;
+    flex-direction: column;
+    align-items: center !important; 
+    padding: 2%;
+    background-color: #E1F7F5;
+    border-radius: 5px;
+    
+}
+
+.dropdownCategory {
+    color: black;
+    margin-bottom: 10%;
+    text-decoration: none;
+    transition: all .1s;
+}
+
+.dropdownCategory:hover {
+    color: gray !important;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.296) !important;
+}
+
+.dropdownHeader:hover .dropdownCont{
+    display: flex;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.243);
+}
+
+.dropdownTitle {
+    display: none;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+}
+
+.dropdownTitle .category {
+    padding-right: 0;
+}
+
+.dropdownTitle svg {
+    width: 22px;
+    height: auto;
+}
+
+
+@media(max-width:1040px) {
+    .webHeader {
+        display: none;
+    }
+    .dropwdownHeader {
+        display: flex;
+    }
+    .dropdownTitle {
+        display: flex;
+    }
 }
