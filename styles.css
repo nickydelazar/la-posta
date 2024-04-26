@@ -357,8 +357,28 @@ main {
     background-size: cover;
 }
 
-.slide1, .slide2, .slide3 {
-    background-image: url(F92x1ieXAAA4BA0.jpeg);   
+.slide1 {
+    background-image: url(Noticias/Sociedad/sociedad03.jpeg);   
+}
+
+.slide2 {
+    background-image: url(Noticias/Policiales/policial02.jpeg);   
+}
+
+.slide3 {
+    background-image: url(Noticias/Economía/economia03.jpeg);   
+}
+
+.slide4 {
+    background-image: url(Noticias/Deportes/deportes04.jpeg);   
+}
+
+.slide5 {
+    background-image: url(Noticias/Tecnología/tecno04.jpeg);   
+}
+
+.slide6 {
+    background-image: url(Noticias/Politica/politica05.jpeg);   
 }
 
 .slideCont2 {
