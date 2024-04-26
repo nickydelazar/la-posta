@@ -156,47 +156,6 @@ span.psw {
 }
 }
 
-/* MAIN */
-
-.container-main {
-    /* margin: 0 auto; */
-    display: grid;
-    grid-template-areas: 
-    "NOTI SIDE"
-    ;
-}
-
-main {
-    padding: 100px 50px;
-}
-
-.sidebar {
-    grid-area: SIDE;
-    background-color: #00000042;
-    padding: 5%;
-}
-.sidebar li, .sidebar a {
-    list-style-type: none;
-    text-decoration: none;
-    font-size: 1.2em;
-    margin-bottom: 10%;
-    color: black;
-}
-.sidebar ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.sidebar li:hover {
-    transform: scale(1.1);
-}
-
-.sbTitle {
-    padding: 0;
-    align-items: center;
-}
-
 .registrarsebtn {
     width: auto;
 }
@@ -310,34 +269,52 @@ main {
     }
 }
 
-.noticias {
-    display: grid;
-    grid-area: NOTI;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 15px;
+main {
+    padding: 100px 50px;
 }
 
-.noticias article {
-    border: 1px;
-    padding: 5px;
+.sidebar {
+    grid-area: SIDE;
+    background-color: #00000042;
+    padding: 4%;
+    max-width: 25%;
+    margin-left: auto;
+}
+.sidebar li, .sidebar a {
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 1.2em;
+    margin-bottom: 10%;
+    color: black;
+}
+.sidebar ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.noticias article h2 {
-    font-size: 25px;
-    margin-bottom: 10px;
+.sidebar li:hover {
+    transform: scale(1.05);
 }
 
-.noticias article p {
-    margin-bottom: 15px;
-}
+@media (max-width:772px) {
+    .container-main {
+        grid-template-areas:
+        "SIDE SIDE"
+        "NOTI NOTI";
+    }
+    .sidebar li {
+        margin: 0;
+    }
+    .sidebar ul {
+        align-items: flex-start;
+    }
+ }
+ 
 
-.noticias article img {
-    width: 100%;
-    height: auto;
-}
-
-.noticias {
-    flex: 1;
+.sbTitle {
+    padding: 0;
+    align-items: center;
 }
 
 .noticiaCont {
@@ -347,7 +324,6 @@ main {
 #slideCont {
     width: 100%;
     height: 650px;
-    /* background-color: #808080; */
     overflow: scroll;
 }
 
@@ -362,7 +338,7 @@ main {
 }
 
 .slide2 {
-    background-image: url(Noticias/Policiales/policial02.jpeg);   
+    background-image: url(Noticias/Policiales/policial02.jpeg);
 }
 
 .slide3 {
@@ -387,18 +363,30 @@ main {
     display: flex;
 }
 
+/* NUEVO */
+.container-main {
+    display: flex;
+    flex-wrap: wrap;
+}
 
+.noticias {
+    flex: 2;
+    padding: 5px;
+    box-sizing: border-box;
+}
 
-@media (max-width:772px) {
-    .container-main {
-        grid-template-areas: 
-        "SIDE SIDE"
-        "NOTI NOTI";
-    }
-    .sidebar li {
-        margin: 0;
-    }
-    .sidebar ul {
-        align-items: flex-start;
-    }
+.noticia {
+    border: 1px;
+    padding: 10px;
+    margin-bottom: 0px;
+}
+
+.noticia h2 {
+    margin-top: 0px;
+    margin-bottom: 3px;
+}
+
+.noticia img {
+    max-width: 40%;
+    height: auto;
 }
