@@ -394,13 +394,13 @@ main {
 
 .articulo {
     flex: 2;
-    border: 1px solid #ccc;
+    border: 1px;
     padding: 20px;
-    margin-right: 20px;
+    margin-right: 10px;
 }
 
 .articulo h1 {
-    font-size: 24px;
+    font-size: 40px;
     margin-top: 0;
     margin-bottom: 10px;
 }
@@ -413,7 +413,7 @@ main {
 }
 
 .articulo h3 {
-    font-size: 16px;
+    font-size: 15px;
     margin-top: 0;
     margin-bottom: 5px;
     color: #999;
@@ -427,6 +427,6 @@ main {
 
 .articulo p {
     margin-top: 0;
-    margin-bottom: 10px;
+    margin-bottom: 13px;
     line-height: 1.6;
 }
