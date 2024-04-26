@@ -390,3 +390,43 @@ main {
     max-width: 40%;
     height: auto;
 }
+
+
+.articulo {
+    flex: 2;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-right: 20px;
+}
+
+.articulo h1 {
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.articulo h2 {
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.articulo h3 {
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 5px;
+    color: #999;
+}
+
+.articulo img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.articulo p {
+    margin-top: 0;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
