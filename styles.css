@@ -430,3 +430,27 @@ main {
     margin-bottom: 13px;
     line-height: 1.6;
 }
+.comentario {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.acciones button {
+    margin-right: 5px;
+}
+
+.aprobar {
+    background-color: green;
+    color: white;
+}
+
+.editar {
+    background-color: orange;
+    color: white;
+}
+
+.eliminar {
+    background-color: red;
+    color: white;
+}
